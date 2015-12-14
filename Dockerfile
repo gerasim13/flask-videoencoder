@@ -1,7 +1,7 @@
 FROM gerasim13/flask-gunicorn
 COPY requirements.txt /tmp/
 RUN apk update
-RUN apk --update add build-base git ffmpeg-libs ffmpeg g++ sqlite python3-dev
+RUN apk --update add build-base git ffmpeg-libs ffmpeg g++ sqlite sqlite-libs python3-dev
 RUN pip3 install -r /tmp/requirements.txt
 RUN apk del build-base python3-dev && \
     rm -rf /root/.cache/pip/* && \

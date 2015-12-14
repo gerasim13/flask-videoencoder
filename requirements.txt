@@ -1,1 +1,5 @@
 git+https://github.com/gerasim13/python-video-converter
+git+https://github.com/gerasim13/api-sequrity
+git+https://github.com/lethain/Redis-Python-Datastructures.git#egg=redis_ds
+redis
+huey
